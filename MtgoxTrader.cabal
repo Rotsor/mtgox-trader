@@ -1,0 +1,10 @@
+name:              MtgoxTrader
+version:           0.0.1
+cabal-version:     >= 1.8
+build-type:        Simple
+
+executable         mtgox
+    main-is:           mtgox.hs
+    build-depends:     base, Decimal, aeson, time, SHA, http-conduit, 
+                       network, unordered-containers, bytestring, base64-bytestring, conduit, text
+    ghc-options:       -threaded -O2
